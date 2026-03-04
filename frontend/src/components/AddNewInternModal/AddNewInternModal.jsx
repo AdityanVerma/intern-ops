@@ -1,4 +1,4 @@
-import "./AddNewInternModal.css"; // We'll style it in the next step.
+import './AddNewInternModal.css'; // We'll style it in the next step.
 
 const AddNewInternModal = ({
   onClose,

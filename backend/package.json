@@ -1,6 +1,6 @@
 {
-  "name": "intern-management-backend",
-  "version": "1.0.0",
+  "name": "intern-ops-backend",
+  "version": "0.1.1",
   "description": "intern management portal",
   "keywords": [
     "javascript",

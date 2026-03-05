@@ -130,7 +130,7 @@ function Login() {
             {/* Submit */}
             <button
               type="submit"
-              className="bg-primary text-primary-foreground w-full rounded-md px-4 py-3 text-base font-medium transition hover:opacity-90"
+              className="bg-primary text-primary-foreground w-full cursor-pointer rounded-md px-4 py-3 text-base font-medium transition hover:opacity-90"
             >
               Sign In
             </button>
@@ -153,7 +153,7 @@ function Login() {
           <div className="grid grid-cols-2 gap-3">
             <button
               onClick={() => loginDemo('hr')}
-              className="border-border hover:bg-secondary/50 flex flex-col items-center gap-2 rounded-lg border px-4 py-4 transition"
+              className="border-border hover:bg-secondary/50 flex cursor-pointer flex-col items-center gap-2 rounded-lg border px-4 py-4 transition"
             >
               <span className="text-2xl">👩‍💼</span>
               <span className="text-xs font-medium">HR Manager</span>
@@ -161,7 +161,7 @@ function Login() {
 
             <button
               onClick={() => loginDemo('mentor')}
-              className="border-border hover:bg-secondary/50 flex flex-col items-center gap-2 rounded-lg border px-4 py-4 transition"
+              className="border-border hover:bg-secondary/50 flex cursor-pointer flex-col items-center gap-2 rounded-lg border px-4 py-4 transition"
             >
               <span className="text-2xl">👨‍🏫</span>
               <span className="text-xs font-medium">Mentor</span>
@@ -172,7 +172,7 @@ function Login() {
         {/* Back */}
         <div className="mt-8 text-center">
           <Link to="/">
-            <button className="border-border hover:bg-muted w-full rounded-md border px-4 py-2 text-sm font-medium transition">
+            <button className="border-border hover:bg-muted w-full cursor-pointer rounded-md border px-4 py-2 text-sm font-medium transition">
               Back to Home
             </button>
           </Link>

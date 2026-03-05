@@ -3,6 +3,7 @@ import {
   createRoutesFromElements,
   Route,
 } from 'react-router-dom';
+
 import LandingPage from './pages/LandingPage.jsx';
 import PublicLayout from './layouts/PublicLayout.jsx';
 
@@ -10,6 +11,8 @@ import Login from './pages/LoginPage.jsx';
 
 import UserLayout from './layouts/UserLayout.jsx';
 import Dashboard from './pages/Dashboard/Dashboard.jsx';
+import Interns from './pages/Interns/Interns.jsx';
+import Mentors from './pages/Mentors/Mentors.jsx';
 
 import HRPage from './pages/HRPage/HRPage.jsx';
 import MentorPage from './pages/MentorPage/MentorPage.jsx';
@@ -24,6 +27,12 @@ const router = createBrowserRouter(
       <Route path="/" element={<PublicLayout />}>
         <Route index element={<LandingPage />} />
         <Route path="login" element={<Login />} />
+      </Route>
+
+      <Route path="/user/:userid" element={<UserLayout />}>
+        <Route path="dashboard" element={<Dashboard />} />
+        <Route path="interns" element={<Interns />} />
+        <Route path="mentors" element={<Mentors />} />
       </Route>
 
       {/* <Route path="/user/:userid">
@@ -45,12 +54,6 @@ const router = createBrowserRouter(
           </Route>
         </Route>
       </Route> */}
-
-      <Route path="/user/:userid" element={<UserLayout />}>
-        <Route path="dashboard" element={<Dashboard />} />
-        {/* <Route path="interns" element={<Interns />} /> */}
-        {/* <Route path="mentors" element={<Mentors />} /> */}
-      </Route>
     </>,
   ),
 );
